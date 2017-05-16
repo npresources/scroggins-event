@@ -59,7 +59,7 @@
               </div>
               <div class="clearfix">
                 <input id="if-submit" type="submit"
-                class="submit-button login-button" value="Login" />
+                class="submit-button login-button" value="Watch Now" />
               </div>
             </form>
             <script type="text/javascript" src="https://hs353.infusionsoft.com/app/webTracking/getTrackingCode"></script>
