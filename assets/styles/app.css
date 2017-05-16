@@ -1,0 +1,153 @@
+/*========================================================*
+ * 1. Header
+ * 2. Content
+ *    - Login
+ *    - Form
+ * 3. Speakers
+ * 4. Footer
+ *=======================================================*/
+
+body {
+	font-family:      "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	background-color: #efefef;
+}
+
+/* 1. Header */
+header {
+	background:  #333;
+	margin-bottom: 5em;
+}
+
+header img {
+	max-height: 32px;
+}
+
+/* 2. Content */
+
+/* - Login */
+
+#login-form h2 {
+	text-align:  center;
+	font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+    font-style:  normal;
+    font-weight: 300;
+    color:       #333;
+	text-transform: uppercase;
+}
+
+#login-form h3 {
+	text-align:  center;
+	font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+    font-style:  normal;
+    font-weight: 300;
+    color:       #333;
+	text-transform: uppercase;
+	font-size:   1.5em;
+}
+
+/* - Form */
+
+.form {
+	margin-top: 1.5em;
+}
+
+.input-style, .textarea-style, .select-style  {
+	width: 			100%;
+	padding: 		1.4rem 0.8rem;
+	margin-bottom: 	1.9rem;
+	outline: 		none;
+	border: 		0;
+	font-size: 		1rem;
+	box-shadow:		inset 0px 0px 0px 0px;
+	color: 			#a9a9a9;
+}
+
+.textarea-style {
+	height: 		auto;
+	resize: 		none;
+	margin-bottom: 	1rem;
+}
+
+.select-style {
+	background-position: right 0rem center;
+	padding: 			 0 0.8rem;
+}
+
+label {
+	color: #696969;
+}
+
+.submit-button {
+	padding:       0.8rem 3rem;
+	border:        0 none;
+	cursor:        pointer;
+	font-size:     1rem;
+	border-radius: 2rem;
+	border:        2px solid #fdcd31;
+	font-weight:   400;
+	width:         100%;
+	background:    transparent;
+}
+
+.submit-button:hover {
+	background: #fdcd31;
+	color: 		#333;
+	transition: all 0.3s;
+}
+
+/* Description */
+
+#description {
+	font-size:      1.35rem;
+	font-weight:    300;
+	text-align:     center;
+	padding-top:    2rem;
+	color: 		  #696969;
+	line-height:    1.5;
+}
+
+/* 3. Speakers */
+
+#speaker-info {
+	font-size:      2.25r3em;
+	letter-spacing: 1px;
+	border-bottom:  3px solid #fdcd31;
+	text-transform: uppercase;
+	text-align:     center;
+	color:          #555;
+	font-weight:    300;
+	padding:        1em 0 1em 0;
+	margin-bottom:  1em;
+}
+
+.speaker-title {
+	margin-top:     1rem;
+	font-weight:    600;
+	font-size:      1.25rem;
+	text-transform: uppercase;
+	text-align:     center;
+	font-family:    'Open Sans', sans-serif;
+}
+
+.speaker-bio {
+	color:       #696969;
+	font-size:     1rem;
+	line-height:   1.5;
+	margin-bottom: 1.6rem;
+	font-family:    'Open Sans', sans-serif;
+}
+
+/* 4. Footer */
+
+footer {
+	background: #333;
+	padding:    3rem 0;
+	color:      #696969;
+	text-align:  center;
+	font-size:   1rem;
+	line-height: 1.5;
+}
+
+.copyright {
+	padding-top: 1em;
+}
