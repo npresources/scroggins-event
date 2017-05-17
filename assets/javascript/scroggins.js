@@ -1,5 +1,55 @@
 /**
- * Handles all form submissions for submitting emails to InfusionSoft.
+ * Returns a string representing the browser that's being used. This is primarily
+ * used for visitors using Safari.
+ *
+ * @param jQuery $ A reference to the jQuery object.
+ */
+var scroggins_get_browser = function( $ ) {
+	return $.trim( $( '#browser-data' ).text() );
+}
+
+/**
+ * If you're using anything other than Safari, the player loads in the context of the page;
+ * otherwise, it will redirect to page in Safari.
+ *
+ */
+var scroggins_load_video_player = function( $ ) {
+
+	/**
+	 * If the login is successful, hide the form and then asynchronously inject the
+	 * player into this page.
+	 */
+	if ( 0 < $( '#redirect').length ) {
+
+		$( '#content-container')
+			.children()
+			.fadeOut( 'fast' );
+
+		// Safari gets a redirect; others get an Ajax video in the current page.
+		if ( '' == scroggins_get_browser( $ ) ) {
+
+			$.get( 'partials/video.php',
+				function( data ) {
+
+					$( 'header' ).css({
+						'margin-bottom': 0
+					});
+
+					$( '#content-container' )
+						.css({
+							'margin-bottom': '-1em'
+						}).append( data )
+				}
+			);
+		} else {
+			window.location.href = 'https://event.clayscroggins.com/safari';
+		}
+	}
+}
+
+/**
+ * Handles all form submissions for submitting emails to InfusionSoft. Once done, will either
+ * redirect Safari users to their video experience or will load the player for our visitors.
  *
  * @param $ A reference to the jQuery object.
  */
@@ -32,30 +82,7 @@ var scroggins_infusionsoft_handler = function( $ ) {
                 .removeClass( 'hide' )
                 .show();
 
-            /**
-			 * If the login is successful, hide the form and then asynchronously inject the
-			 * player into this page.
-			 */
-            if ( 0 < $( '#redirect').length ) {
-
-				$( '#content-container')
-					.children()
-					.fadeOut( 'fast' );
-
-				$.get( 'partials/video.php',
-					function( data ) {
-
-						$( 'header' ).css({
-							'margin-bottom': 0
-						});
-
-						$( '#content-container' )
-							.css({
-								'margin-bottom': '-1em'
-							}).append( data )
-					}
-				);
-            }
+			scroggins_load_video_player( $ );
         }
     });
 };

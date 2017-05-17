@@ -5,6 +5,7 @@
  *    - Form
  * 3. Speakers
  * 4. Footer
+ * 5. Browser Data
  *=======================================================*/
 
 body {
@@ -150,4 +151,10 @@ footer {
 
 .copyright {
 	padding-top: 1em;
+}
+
+/* 5. Browser Data */
+
+#browser-data {
+	display: none;
 }

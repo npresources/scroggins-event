@@ -137,6 +137,14 @@
       </div><!-- .row -->
     </footer><!-- #footer -->
 
+    <div id="browser-data">
+      <?php
+      $user_agent = $_SERVER['HTTP_USER_AGENT'];
+      if ( false !== stripos( $user_agent, 'Safari' ) && false === stripos( $user_agent, 'Chrome' ) ) {
+        echo stripos( $user_agent, 'safari' ) ? stripos( $user_agent, 'safari' ) : '-1';
+      } ?>
+    </div><!-- #browser-data -->
+
     <script src="assets/javascript/vendor/jquery.js" type="text/javascript"></script>
     <script src="assets/javascript/vendor/what-input.js" type="text/javascript"></script>
     <script src="assets/javascript/vendor/foundation.min.js" type="text/javascript"></script>
