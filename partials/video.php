@@ -1,8 +1,1 @@
-<iframe
-src="https://player.theplatform.com/p/IfSiAC/gwRsivc4vv8Q/embed/"
-width="100%"
-frameBorder="0"
-seamless="seamless"
-style="min-height:900px; height: 100%;"
-allowFullScreen>
-</iframe>
+<iframe src="https://player.vimeo.com/video/221210853" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

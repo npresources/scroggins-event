@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>How to Lead When You're Not in Charge | Clay Scroggins</title>
 	<link rel="stylesheet" href="assets/styles/foundation.min.css" />
-  <link rel="stylesheet" href="assets/styles/app.css" />
+  <link rel="stylesheet" href="assets/styles/app.css?<?php echo time(); ?>" />
   </head>
   <body>
 
@@ -30,8 +30,8 @@
           </p>
         </div><!-- #login-image -->
         <div id="login-form" class="medium-6 columns">
-          <h2>Join Live Broadcast<h2>
-          <h3>Wednesday, May 17, 2017 1PM - 3PM (10AM PDT)</h3>
+          <h2>Available On-Demand<h2>
+          <h3>ALL DAY TODAY</h3>
           <div class="form">
             <form id="if-form" accept-charset="UTF-8" action="https://hs353.infusionsoft.com/app/form/process/1560770db22c437218fd3baa76a9731e" class="infusion-form" method="POST" target="if-frame">
               <input name="inf_form_xid" type="hidden" value="1560770db22c437218fd3baa76a9731e" />
@@ -59,7 +59,7 @@
               </div>
               <div class="clearfix">
                 <input id="if-submit" type="submit"
-                class="submit-button login-button" value="Watch Now" />
+                class="submit-button login-button" value="WATCH NOW" />
               </div>
             </form>
             <script type="text/javascript" src="https://hs353.infusionsoft.com/app/webTracking/getTrackingCode"></script>
@@ -148,6 +148,6 @@
     <script src="assets/javascript/vendor/jquery.js" type="text/javascript"></script>
     <script src="assets/javascript/vendor/what-input.js" type="text/javascript"></script>
     <script src="assets/javascript/vendor/foundation.min.js" type="text/javascript"></script>
-    <script src="assets/javascript/scroggins.js" type="text/javascript"></script>
+    <script src="assets/javascript/scroggins.js?<?php echo time(); ?>" />" type="text/javascript"></script>
   </body>
 </html>

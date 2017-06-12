@@ -94,5 +94,18 @@ var scroggins_infusionsoft_handler = function( $ ) {
 
 		scroggins_infusionsoft_handler( $ );
 		$( document ).foundation();
+$.get( 'partials/video.php',
+				function( data ) {
+
+					$( 'header' ).css({
+						'margin-bottom': 0
+					});
+
+					$( '#content-container' )
+						.css({
+							'margin-bottom': '-1em'
+						}).append( data )
+				}
+			);
 	});
 })( jQuery );
