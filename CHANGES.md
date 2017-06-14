@@ -2,10 +2,18 @@
 
 ## 1.3.1 (2017-06-14)
 
+### Added
+
+* `video.css` styles for the video page
+* Adding support for Safari back into the project.
+
 ### Changed
 
-* Adding support for Safari back into the project.
 * Changing the size of the Vimeo player.
+
+### Fixed
+
+* Mobile support for the video.
 
 ### Removed
 

@@ -12,4 +12,4 @@ This will allow Akamai to pick up everything that exists on the server and host 
 
 This is essentially a microsite that looks like it's part of the Clay Scroggins website but is really a standalone site hosted elsewhere.
 
-*Last Updated: June 12, 2017*
+*Last Updated: June 14, 2017*
