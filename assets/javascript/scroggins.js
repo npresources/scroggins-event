@@ -25,23 +25,19 @@ var scroggins_load_video_player = function( $ ) {
 			.children()
 			.fadeOut( 'fast' );
 
-		// Safari gets a redirect; others get an Ajax video in the current page.
-		if ( '' === scroggins_get_browser( $ ) ) {
+        $.get( 'partials/video.php',
+            function( data ) {
 
-			$.get( 'partials/video.php',
-				function( data ) {
+                $( 'header' ).css({
+                    'margin-bottom': 0
+                });
 
-					$( 'header' ).css({
-						'margin-bottom': 0
-					});
-
-					$( '#content-container' )
-						.css({
-							'margin-bottom': '-1em'
-						}).append( data );
-				}
-			);
-        }
+                $( '#content-container' )
+                    .css({
+                        'margin-bottom': '-1em'
+                    }).append( data );
+            }
+        );
 	}
 };
 
