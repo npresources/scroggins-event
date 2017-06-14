@@ -41,8 +41,6 @@ var scroggins_load_video_player = function( $ ) {
 						}).append( data );
 				}
 			);
-		} else {
-		    window.location.href = 'https://event.clayscroggins.com/safari';
         }
 	}
 };
