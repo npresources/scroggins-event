@@ -38,7 +38,7 @@ var scroggins_load_video_player = function( $ ) {
 					$( '#content-container' )
 						.css({
 							'margin-bottom': '-1em'
-						}).append( data )
+						}).append( data );
 				}
 			);
 		} else {

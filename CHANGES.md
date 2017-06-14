@@ -1,14 +1,26 @@
 # Scroggins Event Changes
 
+## 1.3.1 (2017-06-14)
+
+### Changed
+
+* Adding support for Safari back into the project.
+* Changing the size of the Vimeo player.
+
+### Removed
+
+* `app.js` since it's included with `scroggins.js`
+
 ## 1.3.0 (2017-06-12)
 
-#### Changed
+### Changed
 
 * Subhead text.
 * Button text for logging in.
 * Added the encore video player from Vimeo.
 
 #### Notes
+
 * Still need to update the menu on the main site.
 * Need to note that this _will_ use an existing InfusionSoft form.
 

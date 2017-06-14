@@ -4,9 +4,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>How to Lead When You're Not in Charge | Clay Scroggins</title>
 	<link rel="stylesheet" href="assets/styles/foundation.min.css" />
-  <link rel="stylesheet" href="assets/styles/app.css?<?php echo time(); ?>" />
+    <link rel="stylesheet" href="assets/styles/app.css?<?php echo time(); ?>" />
+    <link rel="stylesheet" href="assets/styles/video.css?<?php echo time(); ?>" />
+    <title>How to Lead When You're Not in Charge | Clay Scroggins</title>
   </head>
   <body>
 
@@ -148,6 +149,6 @@
     <script src="assets/javascript/vendor/jquery.js" type="text/javascript"></script>
     <script src="assets/javascript/vendor/what-input.js" type="text/javascript"></script>
     <script src="assets/javascript/vendor/foundation.min.js" type="text/javascript"></script>
-    <script src="assets/javascript/scroggins.js?<?php echo time(); ?>" />" type="text/javascript"></script>
+    <script src="assets/javascript/scroggins.js?<?php echo time(); ?>" type="text/javascript"></script>
   </body>
 </html>
