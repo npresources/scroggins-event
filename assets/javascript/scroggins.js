@@ -2,11 +2,11 @@
  * Returns a string representing the browser that's being used. This is primarily
  * used for visitors using Safari.
  *
- * @param jQuery $ A reference to the jQuery object.
+ * @param $ A reference to the jQuery object.
  */
 var scroggins_get_browser = function( $ ) {
 	return $.trim( $( '#browser-data' ).text() );
-}
+};
 
 /**
  * If you're using anything other than Safari, the player loads in the context of the page;
@@ -26,7 +26,7 @@ var scroggins_load_video_player = function( $ ) {
 			.fadeOut( 'fast' );
 
 		// Safari gets a redirect; others get an Ajax video in the current page.
-		if ( '' == scroggins_get_browser( $ ) ) {
+		if ( '' === scroggins_get_browser( $ ) ) {
 
 			$.get( 'partials/video.php',
 				function( data ) {
@@ -41,9 +41,11 @@ var scroggins_load_video_player = function( $ ) {
 						}).append( data )
 				}
 			);
-		}
+		} else {
+		    window.location.href = 'https://event.clayscroggins.com/safari';
+        }
 	}
-}
+};
 
 /**
  * Handles all form submissions for submitting emails to InfusionSoft. Once done, will either
@@ -53,13 +55,15 @@ var scroggins_load_video_player = function( $ ) {
  */
 var scroggins_infusionsoft_handler = function( $ ) {
 
+    var $submit = $( '#if-submit' );
+
     // If there's no submit button, then we just duck out.
-    if ( 0 === $( '#if-submit' ).length ) {
+    if ( 0 === $submit.length ) {
         return;
     }
 
     // Otherwise, we handle when the button is clicked.
-    $( '#if-submit' ).on( 'click', function( evt ) {
+    $submit.on( 'click', function(evt ) {
 
         var should_return = false;
         $( '.infusion-field-input-container[required]' ).each(function() {
